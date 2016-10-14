@@ -261,13 +261,13 @@ header .intro-text .intro-heading {
 .venn-container{
   width: 400px;
   height: 350px;
-  margin: 75px 50%;
+  margin: 0 50%;
 }
 .venn {
   float: left;
   height: 200px;
   width: 200px;
-  line-height: 150px;
+  line-height: 190px;
   border: 2px solid rgba(255, 255, 255, .5);
   border-radius: 100px;
   background: rgba(254, 209, 54, .3);
@@ -293,11 +293,34 @@ header .intro-text .intro-heading {
   background-image: url('../img/team/eric_b.jpg');
   background-size: cover;
 }
+.arrow {
+  position: relative;
+  transform: scale(.5);
+  left: -405px;
+  bottom: 345px;
+}
+.caption {
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+  left: -305px;
+  bottom: 400px;
+}
+
+@media (max-width: 768px) {
+  .venn-container{
+    width: 400px;
+    height: 350px;
+    margin: -10px 40%;
+    transform: scale(.7);
+  }
+}
 
 @media (min-width: 768px) {
   header .intro-text {
     padding-top: 150px;
-    padding-bottom: 200px;
+    padding-bottom: 50px;
   }
   header .intro-text .intro-lead-in {
     font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
