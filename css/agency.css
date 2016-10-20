@@ -5,17 +5,18 @@
  */
 body {
   overflow-x: hidden;
-  font-family: "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 .text-muted {
-  color: #777777;
+  color: #FFFFFF;
 }
 .text-primary {
   color: #fed136;
 }
 p {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1.75;
+  font-family: "Lato", cursive;
 }
 p.large {
   font-size: 16px;
@@ -42,7 +43,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -59,7 +60,7 @@ h6 {
   color: white;
   background-color: #fed136;
   border-color: #fed136;
-  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Lato", "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
 }
@@ -674,9 +675,11 @@ footer {
 }
 footer span.copyright {
   line-height: 40px;
+  font-size: 12px;
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   text-transform: none;
+  color: gray;
 }
 footer ul.quicklinks {
   margin-bottom: 0;
@@ -686,11 +689,11 @@ footer ul.quicklinks {
   text-transform: none;
 }
 ul.social-buttons {
-  margin-bottom: 0;
+  margin-bottom: 25px;
 }
 ul.social-buttons li a {
   display: block;
-  background-color: #222222;
+  background-color: #fed136;
   height: 40px;
   width: 40px;
   border-radius: 100%;
@@ -705,7 +708,7 @@ ul.social-buttons li a {
 ul.social-buttons li a:hover,
 ul.social-buttons li a:focus,
 ul.social-buttons li a:active {
-  background-color: #fed136;
+  background-color: #111111;
 }
 .btn:focus,
 .btn:active,
