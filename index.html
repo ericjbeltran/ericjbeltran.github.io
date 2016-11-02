@@ -22,6 +22,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
 
+    <!-- Copy to Clipboard .js -->
+    <script src="js/clipboard.js-master/dist/clipboard.min.js"></script>
+
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
@@ -44,7 +47,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Home</a>
+                <a class="navbar-brand page-scroll" href="#page-top">EB</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -54,19 +57,16 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">What I Do</a>
+                        <a class="page-scroll" href="#about">about</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">What I Build</a>
+                        <a class="page-scroll" href="#portfolio">projects</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">My Path</a>
+                        <a href="docs/Beltran_Resume.pdf" target="_blank">resume</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Resume</a>
-                    </li>
-                    <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">contact</a>
                     </li>
                 </ul>
             </div>
@@ -79,8 +79,22 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-heading">Eric Beltran<br /> [<span class="text-primary">Product Manager</span>]</div>
+                <div class="intro-heading">Eric Beltran</div>
+                <div class="intro-lead-in"><span class="text-primary">+ [</span> Product Manager <span class="text-primary">] +</span></div>
+                <ul class="list-inline social-buttons">
+                    <li><a href="http://www.twitter.com/ericbeltran" target="_blank"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="http://www.facebook.com/ericjbeltran" target="_blank"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="http://www.linkedin.com/in/ericbeltran" target="_blank"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                    <li data-toggle="tooltip" title="copy eric@ericbeltran.com to clipboard"><a><i class="fa fa-envelope"></i></a>
+                    </li>
+                </ul>
+
             </div>
+
+            <!-- Venn Diagram
             <div class="venn-container">
               <div class="venn design">Design</div>
               <div class="venn tech">Tech</div>
@@ -88,7 +102,7 @@
               <div class="venn profile"></div>
               <img class="arrow" src="img/arrow.png" />
               <div class="caption">I live here.</div>
-            </div>
+            </div> -->
             <!--<div class="intro-lead-in">UX advocate, coding experience, design expereince, account management experience, all the good things that make up product management.</div>
               Learn About Eric button
               <a href="#services" class="page-scroll btn btn-xl">Learn about Eric</a>
@@ -97,46 +111,47 @@
         </div>
     </header>
     <!-- Services Section  -->
-    <section id="services">
+    <section id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What I Do</h2>
-                    <p>I help schools connect with their communities in new ways through software.</p>
+                    <h2 class="section-heading">About</h2>
+                    <p>Borrowing the words of <a href="https://medium.com/@joshelman/a-product-managers-job-63c09a43d0ec#.2pb5c1oba" target="_blank">Josh Elman</a>, I help companies and their teams ship the right products to their users. In order to achieve this, I live at the intersection of project management, marketing, technology, business development, user research, user exeperience, customer experience, story telling, client services, service deliver, support, design...you get the picture. Product managers are busy and very cross-functional. The simplify the narrative, <a href="http://www.mindtheproduct.com/2011/10/what-exactly-is-a-product-manager/" target="_blank">Mark Erickson</a> came up with this venn diagram which illustrates and greatly simplifies where it is that product managers live. I could at several spheres to this display but the point is I am a maker and I help companies craft successful solutions. I've worked on digital products for a number of years now and I've lead teams through the journey of solution conception to product launch within web and mobile environments.</p>
                 </div>
+            </div>
+            <!-- Venn Diagram -->
+            <div class="venn-container">
+              <div class="venn design">Design</div>
+              <div class="venn tech">Tech</div>
+              <div class="venn biz">Business</div>
+              <div class="venn profile"></div>
+              <img class="arrow" src="img/arrow_blck.png" />
+              <div class="caption">I live here.</div>
             </div>
             <div class="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-briefcase fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Business</h4>
+                    <p class="text-muted">I've held positions in both business partnerships and account management. I understand client relationships and what it takes to successfully carry a new relationship through service delivery and across the renewal stage.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Design</h4>
+                    <p class="text-muted">I'm a former design and have a an engineers mind but a designers eye. I love participating in design critiques and feel strongly that design is a business function. It is an understatement to say that the marketplace is oversaturated with apps and there is no room for clunky products.</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                        <i class="fa fa-server fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Technology</h4>
+                    <p class="text-muted">I've also helped launch a number of products in both web and mobile environments. Understanding how products are built and what it means to make large changes to an existing product is paramount. I put most of my research up-front and craft solutions through and evolutionary prototyping approach.</p>
                 </div>
             </div>
         </div>
@@ -148,7 +163,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">What I Build</h2>
+                    <h2 class="section-heading">Projects</h2>
                     <h3 class="section-subheading text-muted">Work I've completed in the last few years.</h3>
                 </div>
             </div>
@@ -241,12 +256,12 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- About Section
+    <section id="resume">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">My Path</h2>
+                    <h2 class="section-heading">Resume</h2>
                     <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
                 </div>
             </div>
@@ -329,7 +344,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section>-->
 
     <!-- Team Section
     <section id="team" class="bg-light-gray">
@@ -428,7 +443,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Eric</h2>
+                    <h2 class="section-heading">Contact</h2>
                         <ul class="list-inline social-buttons">
                             <li><a href="http://www.twitter.com/ericbeltran" target="_blank"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -437,37 +452,37 @@
                             <li><a href="http://www.linkedin.com/in/ericbeltran" target="_blank"><i class="fa fa-linkedin"></i></a>
                             </li>
                         </ul>
-                    <h3 class="section-subheading text-muted">hello@ericbeltran.com</h3>
+                    <h3 class="section-subheading text-secondary">eric@ericbeltran.com</h3>
                 </div>
             </div>
-            <!--<div class="row">
+            <div class="row">
                 <div class="col-lg-12">
                     <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="^ name needed">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="text" class="form-control" placeholder="Your Title *" id="phone" required data-validation-required-message="^ title needed">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="^ email needed">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="^ message needed"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">Send</button>
                             </div>
                         </div>
                     </form>
@@ -678,6 +693,23 @@
     <!-- Contact Form JavaScript -->
     <script src="js/jqBootstrapValidation.js"></script>
     <script src="js/contact_me.js"></script>
+
+    <!-- Tooltip Javascript -->
+    <script>$(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })</script>
+
+<script>
+var btn = document.getElementById('btn');
+var clipboard = new Clipboard(btn);
+clipboard.on('success', function(e) {
+    console.log(e);
+});
+clipboard.on('error', function(e) {
+    console.log(e);
+});
+</script>
+
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
