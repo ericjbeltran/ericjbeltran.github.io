@@ -272,7 +272,7 @@ header .intro-text .intro-heading {
   height: 200px;
   width: 200px;
   line-height: 190px;
-  border: 2px solid rgba(1, 1, 1, .5);
+  border: 2px solid rgba(1, 1, 1, .1);
   border-radius: 100px;
   background: rgba(254, 209, 54, .3);
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -734,11 +734,11 @@ ul.social-buttons li a:active {
   border: none;
   min-height: 100%;
   padding: 100px 0;
-  text-align: center;
+  text-align: left;
 }
 .portfolio-modal .modal-content h2 {
   margin-bottom: 15px;
-  font-size: 3em;
+  font-size: 2em;
 }
 .portfolio-modal .modal-content p {
   margin-bottom: 30px;
