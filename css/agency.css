@@ -812,3 +812,11 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
+
+.contact-left ul {
+    list-style: none;
+}
+.soc_icons {
+    float: left;
+    line-height: 60px;
+}

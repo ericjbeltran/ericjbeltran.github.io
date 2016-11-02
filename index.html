@@ -25,6 +25,9 @@
     <!-- Copy to Clipboard .js -->
     <script src="js/clipboard.js-master/dist/clipboard.min.js"></script>
 
+    <!-- Mailer .php -->
+    <script src="mail/contact_me.php"></script>
+
     <!-- Theme CSS -->
     <link href="css/agency.css" rel="stylesheet">
 
@@ -699,16 +702,16 @@
       $('[data-toggle="tooltip"]').tooltip()
     })</script>
 
-<script>
-var btn = document.getElementById('btn');
-var clipboard = new Clipboard(btn);
-clipboard.on('success', function(e) {
-    console.log(e);
-});
-clipboard.on('error', function(e) {
-    console.log(e);
-});
-</script>
+    <script>
+    var btn = document.getElementById('btn');
+    var clipboard = new Clipboard(btn);
+    clipboard.on('success', function(e) {
+      console.log(e);
+    });
+    clipboard.on('error', function(e) {
+      console.log(e);
+    });
+    </script>
 
 
     <!-- Theme JavaScript -->
