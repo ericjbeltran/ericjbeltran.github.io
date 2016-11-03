@@ -30,7 +30,7 @@ gulp.task('less', function() {
 
 // Minify compiled CSS
 gulp.task('minify-css', ['less'], function() {
-    return gulp.src('css/agency.css')
+    return gulp.src('http://ericjbeltran.github.io/css/agency.css')
         .pipe(cleanCSS({ compatibility: 'ie8' }))
         .pipe(rename({ suffix: '.min' }))
         .pipe(gulp.dest('css'))
@@ -41,7 +41,7 @@ gulp.task('minify-css', ['less'], function() {
 
 // Minify JS
 gulp.task('minify-js', function() {
-    return gulp.src('js/agency.js')
+    return gulp.src('http://ericjbeltran.github.io/js/agency.js')
         .pipe(uglify())
         .pipe(header(banner, { pkg: pkg }))
         .pipe(rename({ suffix: '.min' }))
@@ -57,7 +57,7 @@ gulp.task('copy', function() {
         .pipe(gulp.dest('bootstrap'))
 
     gulp.src(['node_modules/jquery/dist/jquery.js', 'node_modules/jquery/dist/jquery.min.js'])
-        .pipe(gulp.dest('jquery'))
+        .pipe(gulp.dest('http://ericjbeltran.github.io/jquery'))
 
     gulp.src([
             'node_modules/font-awesome/**',
@@ -67,7 +67,7 @@ gulp.task('copy', function() {
             '!node_modules/font-awesome/*.md',
             '!node_modules/font-awesome/*.json'
         ])
-        .pipe(gulp.dest('font-awesome'))
+        .pipe(gulp.dest('http://ericjbeltran.github.io/font-awesome'))
 })
 
 // Run everything
