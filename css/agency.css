@@ -13,7 +13,10 @@ body {
 .text-primary {
   color: #fed136;
 }
-
+.text-byline {
+  color: #fed136;
+  font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
 p {
   font-size: 18px;
   line-height: 1.75;
