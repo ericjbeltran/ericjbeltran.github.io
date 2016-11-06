@@ -263,6 +263,29 @@ header .intro-text .intro-heading {
   line-height: 50px;
   margin-bottom: 50px;
 }
+.contact {
+  align: left;
+  margin: 30px auto;
+  width: 200px;
+  color: black;
+}
+
+.contact span i {
+  color: #fec503;
+}
+
+.contact a {
+  color: black;
+}
+
+.contact
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #fec503;
+}
+
 /*////////////*/
 /*Venn diagram*/
 /*////////////*/
