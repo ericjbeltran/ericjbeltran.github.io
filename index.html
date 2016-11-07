@@ -12,8 +12,6 @@
     <title>Eric Beltran</title>
     <link rel="shortcut icon" type="image/png" href="favicon.png">
 
-
-
     <!-- Bootstrap Core CSS -->
     <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
@@ -87,8 +85,7 @@
                     <li><a href="http://www.linkedin.com/in/ericbeltran" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </li>
                     <li><a href="https://github.com/ericjbeltran" target="_blank"><i class="fa fa-github"></i></a>
-
-                    <li data-toggle="tooltip" title="copy eric@ericbeltran.com to clipboard"><a><i class="fa fa-envelope"></i></a>
+                    <li data-toggle="tooltip" data-placement="top" title="copy eric@ericbeltran.com" data-clipboard-text="eric@ericbeltran.com"><a><i class="fa fa-envelope"></i></a>
                     </li>
                 </ul>
                 <a class="page-scroll" href="#about"><i class="fa fa-angle-down fa-2x text-white" aria-hidden="true"></i></a>
@@ -652,8 +649,47 @@
       $('[data-toggle="tooltip"]').tooltip()
     })</script>
 
+    <script>
+    $('button').tooltip({
+      trigger: 'click',
+      placement: 'top'
+    });
+
+    function setTooltip(btn, message) {
+      $(btn).tooltip('show')
+        .attr('data-original-title', message)
+        .tooltip('show');
+    }
+
+    function hideTooltip(btn) {
+      setTimeout(function() {
+        $(btn).tooltip('hide');
+      }, 2000);
+    }
+    </script>
+
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+
+    <!-- Clipboard Copy -->
+    <!-- Include library -->
+    <script src="js/clipboard/dist/clipboard.min.js"></script>
+
+    <!-- Instantiate clipboard -->
+    <script>
+    var btns = document.querySelectorAll('li');
+    var clipboard = new Clipboard(btns);
+    clipboard.on('success', function(e) {
+      setTooltip(e.trigger, 'Copied!');
+      hideTooltip(e.trigger);
+    });
+    clipboard.on('error', function(e) {
+      setTooltip(e.trigger, 'Failed!');
+      hideTooltip(e.trigger);
+    });
+
+    </script>
+
 
 </body>
 
