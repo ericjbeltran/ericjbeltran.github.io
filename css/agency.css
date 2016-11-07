@@ -9,14 +9,29 @@ body {
 }
 .text-muted {
   color: #111111;
+  font-size: 14px;
 }
 .text-primary {
+  /*color: #b20000;*/
   color: #fed136;
 }
+
+.text-white {
+  color: #ffffff;
+}
+
 .text-byline {
   color: #222222;
   font-size: 21px;
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+.text-formatted {
+  color: #FFFFFF;
+  font-size: 10px;
+  background-color: #222222;
+  font-family: "Lato", "Roboto Slab", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
 }
 p {
   font-size: 18px;
@@ -287,6 +302,12 @@ a.active {
   color: #fec503;
 }
 
+ul.achievements {
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+
 /*////////////*/
 /*Venn diagram*/
 /*////////////*/
@@ -439,16 +460,14 @@ section h3.section-subheading {
   max-width: 400px;
   margin: 0 auto;
   background-color: white;
-  text-align: center;
+  text-align: left;
   padding: 25px;
 }
 #portfolio .portfolio-item .portfolio-caption h4 {
   text-transform: none;
-  margin: 0;
+  margin: 0 0 10px 0;
 }
 #portfolio .portfolio-item .portfolio-caption p {
-  font-family: "Droid Serif", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-style: italic;
   font-size: 16px;
   margin: 0;
 }
