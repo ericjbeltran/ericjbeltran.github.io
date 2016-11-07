@@ -366,6 +366,7 @@ ul.achievements {
   .venn-container{
     width: 400px;
     height: 350px;
+    margin: 0 0 50px 200px;
     transform: scale(.5);
   }
 }
