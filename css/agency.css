@@ -311,7 +311,7 @@ ul.achievements {
 /*////////////*/
 /*Venn diagram*/
 /*////////////*/
-.venn-container{
+.venn-group{
   width: 400px;
   height: 350px;
   margin: 75px 50%;
@@ -363,10 +363,10 @@ ul.achievements {
 }
 
 @media (max-width: 728px) {
-  .venn-container{
+  .venn-group{
     width: 400px;
     height: 350px;
-    margin: 0 0 50px 200px;
+    margin: 50px;
     transform: scale(.5);
   }
 }
